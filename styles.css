@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: row; /* Ensure body layout is row-based */
+    height: 100vh; /* Full viewport height */
+}
+
+.vertical-menu {
+    width: 40px; /* Set width to accommodate the rotated text */
+    position: fixed; /* Fixes the menu to the left side */
+    top: 0;
+    left: 0;
+/*    height: auto; /* Full height of the screen */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+ /*   padding: auto; */
+/*    box-sizing: border-box; /* Ensure no extra spacing is added */
+}
+
+.vertical-menu div {
+    border: .5px solid rgb(130, 130, 130); /* Add a thin black border around each item */
+    box-sizing: border-box; /* Include border in the element's total width and height */
+    height: 150px; /* Set a consistent height for each item */
+    padding: 10px 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+/*    flex-grow: 1; /* Ensure items grow to fill available space */
+}
+
+.vertical-menu div a {
+    transform: rotate(90deg); /* Rotate text 90 degrees clockwise */
+    transform-origin: center; /* Rotate around the center */
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* .vertical-menu div:hover {
+    background-color: #575757; /* Background color on hover } */ 
+
+    .main-content {
+        margin-left: 40px; /* Adjust margin to make space for the vertical menu */
+     /*   flex: 1; /* Allow content to take up remaining space */
+        display:grid;
+        grid-template-columns: 1fr 1.5fr 3.5fr; /* Two equal-width columns */
+        grid-template-rows: repeat(6,auto); /* Six rows with height based on content */
+        gap: 0px; /* Gap between rows and columns to show borders */
+    }
+
+    .main-content > div {
+        border: .5px solid rgb(130, 130, 130); /* Add a thin black border around each cell */
+        box-sizing: border-box; /* Include border in the element's total width and height */
+        display: flex; 
+        height: auto;
+        align-items: center;
+        justify-content: left;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .main-content > .row1 { grid-row: 1; }
+    .main-content > .row2 { grid-row: 2; }
+    .main-content > .row3 { grid-row: 3; }
+    .main-content > .row4 { grid-row: 4; }
+    .main-content > .row5 { grid-row: 5; }
+    .main-content > .row6 { grid-row: 6; }
+
+    .column1 { grid-column: 1; }
+    .column2 { grid-column: 2; }
+    .column3 { grid-column: 3; }
+
+.column1 {
+    font-size: x-small;
+    align-items: center;
+    justify-content: center;
+ /*   text-transform: rotate(90deg);
+    transform-origin: center; */
+}
+.column2 {
+    align-items: center;
+    justify-content: center;
+}
+.column3 { 
+}
+
+img {
+    padding-right: 5px;
+}
+
+
+/* ROW 2 */
+.threeD_model {
+    height: 250px;
+}
+.hop_sm {
+    height: 75px;
+}
+.ar_sphere {
+    height: 250px;
+}
+.inside_sphere {
+    height: 250px
+}
+.bun_run {
+    height: 100px;
+}
+/* ROW 3 */ 
+.kafka_tv {
+    height: 250px;
+}
+.weather_silver {
+    height: 150px;
+}
+.facial_rec {
+    height: 200px;
+}
+.phone_inhand {
+    height: 250px;
+}
+/* ROW 5 */
+.exhibition_poster {
+    height: 250px;
+}
+.face_poster {
+    height: 150px;
+}
+.cherry_poster {
+    height: 150px;
+}
+/* ROW 6 */
+.in_tex {
+    height: 200px;
+}
+.banners {
+    height: 200px;
+}
+.two_books {
+    height: 150px;
+}
+.flat_cover {
+    height: 150px;
+}
