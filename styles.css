@@ -91,47 +91,44 @@ body {
 
 
 .column1 {
-/*    column-width: 1fr; */
     font-size: x-small;
     align-items: center;
     justify-content: right;
- /*   text-transform: rotate(90deg);
-    transform-origin: center; */
 }
+
 .column2 {
- /*   column-width: 1.5fr; */
     align-items: center;
     justify-content: right;
 }
+
+.column3 { 
+    grid-auto-flow: column; /* Make the images flow horizontally in one row */
+    justify-content: left;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;  
+}
+
+/* RESPONSIVE FOR MOBILE, REMOVE 2ND COLUMN */
 @media screen and (max-width: 600px) {
     .main-content .column2 {
-     /*   background-color: red; */
-    /* grid-template-columns: 1fr 0fr 6fr; */
      display:none;
     }  
     .column3 {
         grid-column: 2;
         width: calc(80vw);
     }
+    .image {
+        max-height: 150px;
+    }
 }
 
-.column3 { 
-/*    column-width: 5.5fr; */
-    grid-auto-flow: column; /* Make the images flow horizontally in one row */
-    justify-content: left;
-    /*    gap: 10px; /* Space between images */
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    
-}
+
+/* CONTENT: IMAGES */
 
 img {
     padding-right: 5px;
-/*    width: 100%; /* Make the images responsive within their grid cells */
-/*    object-fit: cover; */
 }
-
 
 /* ROW 2 */
 .threeD_model {
