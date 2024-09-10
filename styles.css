@@ -17,7 +17,7 @@ body {
     position: fixed; /* Fixes the menu to the left side */
     top: 0;
     left: 0;
-/*    height: auto; /* Full height of the screen */
+    height: auto; /* Full height of the screen */
     background-color: #ffffff;
     display: flex;
     flex-direction: column; /* Align items vertically */
@@ -103,6 +103,18 @@ body {
     align-items: center;
     justify-content: right;
 }
+@media screen and (max-width: 600px) {
+    .main-content .column2 {
+     /*   background-color: red; */
+    /* grid-template-columns: 1fr 0fr 6fr; */
+     display:none;
+    }  
+    .column3 {
+        grid-column: 2;
+        width: calc(80vw);
+    }
+}
+
 .column3 { 
 /*    column-width: 5.5fr; */
     grid-auto-flow: column; /* Make the images flow horizontally in one row */
