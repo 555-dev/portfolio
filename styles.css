@@ -6,6 +6,12 @@ body {
     height: 100vh; /* Full viewport height */
 }
 
+
+
+
+
+/* MENU SIDEBAR */
+
 .vertical-menu {
     width: 40px; /* Set width to accommodate the rotated text */
     position: fixed; /* Fixes the menu to the left side */
@@ -42,53 +48,76 @@ body {
 /* .vertical-menu div:hover {
     background-color: #575757; /* Background color on hover } */ 
 
+
+
+
+
+
+
+/* CONTENT GRID */
+
     .main-content {
         margin-left: 40px; /* Adjust margin to make space for the vertical menu */
      /*   flex: 1; /* Allow content to take up remaining space */
         display:grid;
-        grid-template-columns: 1fr 1.5fr 3.5fr; /* Two equal-width columns */
+        width: 100vw;
+        height:auto;
+        grid-template-columns: 1fr 2fr 6fr;
         grid-template-rows: repeat(6,auto); /* Six rows with height based on content */
         gap: 0px; /* Gap between rows and columns to show borders */
     }
 
     .main-content > div {
-        border: .5px solid rgb(130, 130, 130); /* Add a thin black border around each cell */
+        border: .5px solid rgb(130, 130, 130);
         box-sizing: border-box; /* Include border in the element's total width and height */
-        display: flex; 
+        display: grid; 
         height: auto;
         align-items: center;
-        justify-content: left;
         margin: 0px;
-        padding: 0px;
+        padding-right: 10px;
     }
 
-    .main-content > .row1 { grid-row: 1; }
-    .main-content > .row2 { grid-row: 2; }
-    .main-content > .row3 { grid-row: 3; }
-    .main-content > .row4 { grid-row: 4; }
-    .main-content > .row5 { grid-row: 5; }
-    .main-content > .row6 { grid-row: 6; }
+.row1 { grid-row: 1; }
+.row2 { grid-row: 2; }
+.row3 { grid-row: 3; }
+.row4 { grid-row: 4; }
+.row5 { grid-row: 5; }
+.row6 { grid-row: 6; }
 
-    .column1 { grid-column: 1; }
-    .column2 { grid-column: 2; }
-    .column3 { grid-column: 3; }
+.column1 { grid-column: 1; }
+.column2 { grid-column: 2; }
+.column3 { grid-column: 3; }
+
+.row1 .row2 .row3 .row4 .row5 .row6 {
+    height: 250px;
+}
 
 .column1 {
+/*    column-width: 1fr; */
     font-size: x-small;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
  /*   text-transform: rotate(90deg);
     transform-origin: center; */
 }
 .column2 {
+ /*   column-width: 1.5fr; */
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 .column3 { 
+/*    column-width: 5.5fr; */
+    grid-auto-flow: column; /* Make the images flow horizontally in one row */
+    justify-content: left;
+    /*    gap: 10px; /* Space between images */
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 img {
     padding-right: 5px;
+/*    width: 100%; /* Make the images responsive within their grid cells */
+/*    object-fit: cover; */
 }
 
 
