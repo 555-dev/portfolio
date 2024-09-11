@@ -127,7 +127,7 @@ body {
         grid-column: 2;
     }
     .image {
-        max-height: 150px;
+        max-height: 175px;
     }
     .main-content {
         grid-template-columns: 1fr 5fr;
