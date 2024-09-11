@@ -154,6 +154,9 @@ body {
 .bun_run {
     height: 100px;
 }
+.flipphone {
+    height: 200px;
+}
 /* ROW 3 */ 
 .kafka_tv {
     height: 250px;
