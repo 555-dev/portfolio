@@ -112,7 +112,7 @@ body {
 }
 .column2 {
     font-size:x-small;
-    text-transform: capitalize;
+    text-transform: uppercase;
     align-items: center;
     justify-content: right;
     padding: 10px;
