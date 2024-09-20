@@ -69,6 +69,6 @@ a {
 @media screen and (max-width: 730px) 
 {
     .mail{
-        max-width: calc(100vw - 40px);
+        max-width: calc(100vw - 60px);
     }
 }
