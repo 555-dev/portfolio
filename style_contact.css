@@ -70,5 +70,6 @@ a {
 {
     .mail{
         max-width: calc(100vw - 60px);
+        height: auto;
     }
 }
