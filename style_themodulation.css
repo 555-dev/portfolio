@@ -68,6 +68,6 @@ p {
 @media screen and (max-width: 730px) 
 {
     .search{
-        height: 250px;
+        max-width: calc(100vw - 40px);
     }
 }
