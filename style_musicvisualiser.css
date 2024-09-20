@@ -6,9 +6,16 @@ body {
     display: flex;
     flex-direction:column;
     overflow-y: auto;
+
+    background-image: url(content/paper_texture.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -52,23 +59,4 @@ body {
     color: rgb(0, 0, 0);
     text-decoration: none;
     white-space: nowrap;
-}
-
-.main {
-    margin-left: 40px;
-}
-.mail {
-    height: 450px;
-}
-a {
-    text-decoration:underline;
-    color: rgb(0, 0, 0);
-}
-
-/* RESPONSIVE FOR MOBILE */
-@media screen and (max-width: 730px) 
-{
-    .mail{
-        height: 250px;
-    }
 }
