@@ -160,6 +160,9 @@ body {
 .weather_silver {
     height: 150px;
 }
+.screens{
+    height: 250px;
+}
 .facial_rec {
     height: 200px;
 }
@@ -167,6 +170,9 @@ body {
     height: 250px;
 }
 /* ROW 5 */
+.blocks{
+    height: 30px;
+}
 .exhibition_poster {
     height: 250px;
 }
