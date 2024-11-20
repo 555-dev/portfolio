@@ -1,22 +1,25 @@
 body {
     margin: 0;
-    height: 100vh;
+    font-family: helvetica; 
+    letter-spacing: 0.01cm;
+}
+.main {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 50px);
     font-family: helvetica; 
     letter-spacing: 0.01cm;
     display: flex;
     flex-direction:column;
     overflow-y: auto;
-    
     justify-content: center;
     align-items: center;
-}
-
-.main {
+    margin-top: 50px;
     margin-left: 40px;
 }
 .mail {
     height: 450px;
 }
+
 a {
     text-decoration:underline;
     color: rgb(0, 0, 0);
