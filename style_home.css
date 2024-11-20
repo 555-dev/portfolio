@@ -85,10 +85,6 @@ body {
 /* ROW 5 */ .blocks{height: 30px;} .exhibition_poster {height: 250px;} .face_poster {height: 150px;} .cherry_poster {height: 150px;}
 /* ROW 6 */ .in_tex {height: 200px;} .banners {height: 200px;} .two_books {height: 150px;} .flat_cover {height: 150px;}
 
-.image:hover {
-    transform: scale(1.2);
-    padding: 10%;
-}
 
 /* RESPONSIVE FOR MOBILE,  TO REMOVE 2ND COLUMN */
 @media screen and (max-width: 730px) 
