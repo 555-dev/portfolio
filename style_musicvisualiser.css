@@ -6,57 +6,7 @@ body {
     display: flex;
     flex-direction:column;
     overflow-y: auto;
-
-    background-image: url(content/paper_texture.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
     justify-content: center;
     align-items: center;
-
 }
 
-
-/* MENU SIDEBAR */
-.vertical-menu {
-    display: grid;
-    width: 40px;
-    height: 100vh;
-    grid-template-columns: 1;
-    grid-template-rows: repeat(auto);
-    position: fixed;
-    top: 0;
-    left: 0;
-    gap: 0px;
-    padding:0px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.vertical-menu div {
-    grid-column: 1;
-    border: .5px solid rgb(130, 130, 130);
-    box-sizing: border-box;
-    display: grid;
-    width: 40px;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-}
-
-.b1 { grid-row: 1; min-height: 75px;}
-.b3 { grid-row: 2; min-height: 95px;}
-.b4 { grid-row: 3; min-height: 150px;}
-.b5 { grid-row: 4; min-height: 135px;}
-.b6 { grid-row: 5; min-height: 170px;}
-.b7 { grid-row: 6; min-height: 150px;}
-
-.vertical-menu div a {
-    font-weight:500;
-    transform: rotate(90deg);
-    transform-origin: center;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    white-space: nowrap;
-}
