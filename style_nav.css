@@ -15,22 +15,25 @@ html {
 .icon {
     position: fixed;
     top: 0;
-    width: calc(35.555px + 11.111vw);
+    width: calc(34.59px + 13.514vw);
     height: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     border-right: .5px solid rgb(0, 0, 0);
     border-bottom: .5px solid rgb(0, 0, 0);
     border-top: .5px solid rgb(0, 0, 0);
+    padding: 5px;
 }
 .logo {
-    height: 45px;
+    height: 100%;
+    width: 100%;
+    
 }
 .marquee {
-    width: calc(100vw - 35.555px - 11.111%); 
-    /* to align with the first column of the grid = full screen minus 40px [for vertical menu], minus 1 ninth of viewport width bc 1st column
-    is 1fr [with 8fr remaining], then i took 4.444px from the 40px as i realised the grid size was acc 100vw-40px, then in fractions of that */
+    width: calc(100vw - 34.59px - 13.514%); 
+    /* to align with the first column of the grid = full screen minus 40px [for vertical menu], minus fraction of viewport width equal to first column, then i took that fraction from the 40px as i realised the grid size was acc 100vw-40px */
     height: 50px;
     position:fixed;
     top: 0;
