@@ -14,8 +14,8 @@ body {
     display:grid;
     width: 100vw;
     height:auto;
-    grid-template-columns: 1fr 2fr 6fr;
-    grid-template-rows: repeat(4,auto);
+    grid-template-columns: 1.25fr 2fr 6fr;
+    grid-template-rows: repeat(5,auto);
     gap: 0px;
 }
 .main-content > div {
@@ -23,15 +23,18 @@ body {
     border-bottom: .5px solid rgb(0, 0, 0);
     box-sizing: border-box;
     display: grid; 
-    height: auto;
-    align-items: center;
+    max-height: 185px;
+    align-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 /* GRID SET-UP*/
-.row2 { grid-row: 1; }
-.row3 { grid-row: 2; }
-.row5 { grid-row: 3; }
-.row6 { grid-row: 4; }
+.row1 { grid-row: 1; }
+.row2 { grid-row: 2; }
+.row3 { grid-row: 3; }
+.row4 { grid-row: 4; }
+.row5 { grid-row: 5;}
 .column1 { grid-column: 1; }
 .column2 { grid-column: 2; }
 .column3 { grid-column: 3; }
@@ -49,17 +52,19 @@ body {
     align-items: center;
     justify-content: right;
     text-align: right;
-    position: relative;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    padding:5px 10px 0 10px;
+    
 }
 .blurb {
-    padding: 10px;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 .software_box {
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     bottom: 0;
     text-wrap: nowrap;
@@ -74,17 +79,27 @@ body {
 .column3 { 
     grid-auto-flow: column;
     justify-content: left;
+    align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;  
     gap: 5px;
-    padding: 5px 0 5px 0;
+    padding: 5px 0 5px 5px;
 }
-/* ROW 2 */ .threeD_model {height: 250px;} .hop_sm {height: 75px;} .ar_sphere {height: 250px;} .inside_sphere {height: 250px} .bun_run {height: 100px;} .flipphone {height: 125px;}
-/* ROW 3 */ .kafka_tv {height: 250px;} .weather_silver {height: 150px;} .screens{height: 250px;} .facial_rec {height: 200px;} .phone_inhand {height: 250px;}
-/* ROW 5 */ .blocks{height: 30px;} .exhibition_poster {height: 250px;} .face_poster {height: 150px;} .cherry_poster {height: 150px;}
-/* ROW 6 */ .in_tex {height: 200px;} .banners {height: 200px;} .two_books {height: 150px;} .flat_cover {height: 150px;}
-
+.image {
+    position: relative;
+    z-index: 1;
+}
+/* ROW 1 */ .sindy_poster {height: 175px;}
+/* ROW 1 */ .CD {height: 125px;} .threeD_model {height: 175px;} .hop_sm {height: 75px;} .ar_sphere {height: 175px;} .inside_sphere {height: 175px} .bun_run {height: 100px;} .flipphone {height: 125px;}
+/* ROW 2 */ .kafka_tv {height: 175px;} .weather_silver {height: 175px;} .screens{height: 175px;} .facial_rec {height: 175px;} .phone_inhand {height: 175px;} .screen {height: 175px;}
+/* ROW 3 */ .blocks {height: 30px;} .exhibition_poster {height: 175px;} .face_poster {height: 175px;} .cherry_poster {height: 175px;}
+/* ROW 4 */ .in_tex {height: 175px;} .banners {height: 175px;} .two_books {height: 175px;} .flat_cover {height: 175px;}
+/* ROW 5 */ .doughnuts {height: 175px;}
+/*.image:hover {
+    transform: scale(1.2);
+    padding: 10%;
+}*/
 
 /* RESPONSIVE FOR MOBILE,  TO REMOVE 2ND COLUMN */
 @media screen and (max-width: 730px) 
