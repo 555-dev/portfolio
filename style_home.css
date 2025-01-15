@@ -119,3 +119,10 @@ body {
         grid-template-columns: 1fr 5fr;
     }
 }
+
+@media screen and (max-width: 500px)
+{
+    .image {
+        max-height: 125px;
+    }
+}
