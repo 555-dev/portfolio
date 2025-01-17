@@ -50,7 +50,7 @@ window.addEventListener('resize', adjustIconWidthAndMarquee);
 function adjustOnFrame() {
     requestAnimationFrame(() => {
         adjustMenuDivHeights();
-        adjustIconWidthAndMarquee()
+        adjustIconWidthAndMarquee();
     });
 }
 
