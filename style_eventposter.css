@@ -21,7 +21,7 @@ body {
 .sindy_poster {
     height: 450px;
 }
-p {
+.main p {
     padding: 20px 10px 0 10px;
     width: 450px;
 }
@@ -33,7 +33,7 @@ p {
         max-width: calc(100vw - 60px);
         height: auto;
     }
-    p { 
+    .main p { 
         width: auto;
         font-size: 8px;
     }
