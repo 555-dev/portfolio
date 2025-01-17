@@ -87,6 +87,7 @@ body {
     white-space: nowrap;  
     gap: 5px;
     padding: 5px 0 5px 5px;
+    font-size: 8px;
 }
 .image {
     position: relative;
