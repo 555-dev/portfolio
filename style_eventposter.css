@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: helvetica; 
+    letter-spacing: 0.01cm;
+}
+.main {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 50px);
+    font-family: helvetica; 
+    letter-spacing: 0.01cm;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    justify-content: center;
+    align-content: right;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 12px;
+}
+.sindy_poster {
+    height: 450px;
+}
+p {
+    padding: 20px 10px 0 10px;
+    width: 450px;
+}
+
+/* RESPONSIVE FOR MOBILE*/
+@media screen and (max-width: 515px) 
+{
+    .sindy_poster {
+        max-width: calc(100vw - 60px);
+        height: auto;
+    }
+    p { 
+        width: auto;
+        font-size: 8px;
+    }
+}
