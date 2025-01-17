@@ -73,6 +73,15 @@ body {
     justify-content: center;
     box-sizing: border-box;
 }
+video::-webkit-media-controls {
+    display: none !important;
+}
+video::-moz-media-controls {
+    display: none !important;
+}
+video.no-controls {
+    pointer-events: none;
+}
 .vidcap {
     text-align: end;
     max-height: 100%;

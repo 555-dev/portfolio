@@ -21,6 +21,15 @@ body {
 .doughnuts {
     height: 450px;
 }
+video::-webkit-media-controls {
+    display: none !important;
+}
+video::-moz-media-controls {
+    display: none !important;
+}
+video.no-controls {
+    pointer-events: none;
+}
 
 /* RESPONSIVE FOR MOBILE */
 @media screen and (max-width: 865px) 
