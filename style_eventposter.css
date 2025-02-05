@@ -9,7 +9,7 @@ body {
     font-family: helvetica; 
     letter-spacing: 0.01cm;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     overflow-y: auto;
     justify-content: center;
     align-content: right;
@@ -17,9 +17,20 @@ body {
     margin-top: 50px;
     margin-left: 40px;
     font-size: 12px;
+    gap: 50px;
+}
+.poster {
+    display: flex;
+    flex-direction: column;
+}
+.video {
+    object-fit: fill;
 }
 .sindy_poster {
     height: 450px;
+}
+.IWD_poster {
+    height: 562.5px;
 }
 video::-webkit-media-controls {
     display: none !important;
@@ -30,20 +41,46 @@ video::-moz-media-controls {
 video.no-controls {
     pointer-events: none;
 }
-.main p {
-    padding: 20px 10px 0 10px;
-    width: 450px;
+.poster p {
+    padding: 20px 5px 0 5px;
+    width: 440px;
 }
 
 /* RESPONSIVE FOR MOBILE*/
+@media screen and (max-width: 1000px) 
+{
+    .main {
+        flex-direction: column;
+        gap: 0;
+    
+    }
+    .poster {
+        padding-top: 20px;
+    }
+}
 @media screen and (max-width: 515px) 
 {
+    .main {
+        justify-content: start;
+    }
+    .poster {
+        padding-top: 0;
+    }
     .sindy_poster {
         max-width: calc(100vw - 60px);
         height: auto;
+        margin: 0;
+        padding: 10px 10px 0 10px;
+    }
+    .IWD_poster {
+        max-width: calc(100vw - 60px);
+        height: auto;
+        margin: 0;
+        padding: 10px 10px 0 10px;
     }
     .main p { 
         width: auto;
         font-size: 8px;
+        padding: 0 10px 0 10px;
     }
 }
