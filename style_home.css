@@ -138,6 +138,12 @@ video.no-controls {
 
 @media screen and (max-width: 500px)
 {
+    .main-content {
+        margin-left: 0;
+    }
+    .vertical-menu {
+        display: none !important;
+       }
     .image {
         max-height: 125px;
     }
