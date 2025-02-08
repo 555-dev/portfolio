@@ -50,6 +50,7 @@ video.no-controls {
 @media screen and (max-width: 1000px) 
 {
     .main {
+        justify-content: start;
         flex-direction: column;
         gap: 0;
     
@@ -60,9 +61,6 @@ video.no-controls {
 }
 @media screen and (max-width: 515px) 
 {
-    .main {
-        justify-content: start;
-    }
     .poster {
         padding-top: 0;
     }
