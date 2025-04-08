@@ -9,9 +9,9 @@ body {
     font-family: helvetica; 
     letter-spacing: 0.01cm;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     overflow-y: auto;
-    justify-content: center;
+    justify-content: start;
     align-content: right;
     align-items: center;
     margin-top: 50px;
@@ -19,17 +19,35 @@ body {
     font-size: 12px;
     gap: 50px;
 }
-.poster {
+
+.row1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 50px;
+}
+.row2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.poster {
+    display:block;
 }
 .video {
     object-fit: fill;
+}
+.thirdkulture {
+    height: 562.5px;
 }
 .sindy_poster {
     height: 450px;
 }
 .IWD_poster {
+    height: 562.5px;
+}
+.IWD_poster2 {
     height: 562.5px;
 }
 video::-webkit-media-controls {

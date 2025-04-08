@@ -112,7 +112,7 @@ video.no-controls {
 .mobile {
     display: none;
 }
-/* ROW 1 */ .sindy_poster {height: 175px;} .IWD_poster {height: 175px;}
+/* ROW 1 */ .sindy_poster {height: 175px;} .IWD_poster {height: 175px;} .IWD_poster2 {height:175px;} .thirdkulture {height: 175px;}
 /* ROW 1 */ .CD {height: 125px;} .threeD_model {height: 175px;} .hop_sm {height: 75px;} .ar_sphere {height: 175px;} .inside_sphere {height: 175px} .bun_run {height: 100px;} .flipphone {height: 125px;}
 /* ROW 2 */ .kafka_tv {height: 175px;} .weather_silver {height: 175px;} .screens{height: 175px;} .facial_rec {height: 175px;} .phone_inhand {height: 175px;} .screen {height: 175px;}
 /* ROW 3 */ .blocks {height: 30px;} .exhibition_poster {height: 175px;} .face_poster {height: 175px;} .cherry_poster {height: 175px;}
@@ -124,10 +124,11 @@ video.no-controls {
 }*/
 
 /* RESPONSIVE FOR MOBILE,  TO REMOVE 2ND COLUMN */
+
 @media screen and (max-width: 730px) 
 {
     .main-content .column2 {
-     display:none;
+     display: none;
     }  
     .column3 {
         grid-column: 2;
