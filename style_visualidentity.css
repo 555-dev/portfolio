@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: helvetica; 
+    letter-spacing: 0.01cm;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+.main {
+  height: calc(100vh - 50px);
+  width: 100vw;
+  margin: 50px 0 0 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+}
+
+/*LEFT*/
+
+.bigview {
+  height: calc(100vh - 50px);
+  width: 82.917vw; /*percentage of width of screen book covers take up*/
+  object-fit: cover;
+  align-items: left;
+  border-right: .5px solid rgb(0, 0, 0);
+}
+/*hidden bigview*/
+.bigview.in_tex {display:none;}
+.bigview.banners {display:none;}
+.bigview.two_books {display:none;}
+.bigview.flat_cover {display:none;}
+.bigview.spines {display:none;}
+.bigview.ah1 {display:block;}
+.bigview.ah2 {display:none;}
+.bigview.ah3 {display:none;}
+
+
+/*RIGHT*/
+
+.top {
+  height: min-content;
+  border-bottom: .5px solid rgb(0, 0, 0);
+  padding: none;
+  margin: none;
+}
+.main p {
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+}
+
+.bottom {
+  height: auto;
+  width: 100%;
+  margin: none;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  overflow-y: auto;
+  gap: 20px;
+}
+.bottom figure {
+  height:auto;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  height: 50px;
+}
+figcaption {
+  font-size: 8px;
+}
+
+/*RESPONSIVE WITH SEARCH/TAB BAR (NOT FULL SCREEN)*/
+@media screen and (max-height: 850px) {
+  .bigview {
+    height: calc(100vh - 50px);
+    width: 77.847vw;
+  }
+}
+
+
+/*@media screen and (max-width: 1439px) {
+  .bigview {
+    max-height: calc(100vh - 50px);
+    max-width: 77.847vw;
+    height: auto;
+    width: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .top {
+    height: calc((100vh - 50px) * .6);
+  }
+  .bottom {
+    height: calc((100vh - 50px) * .4);
+    display: block;
+    gap: 20px;
+  }
+  p {
+    padding: 0 10px 0 10px;
+  }
+  .image {
+    height: 75px;
+    padding: 0 5px 0 5px;
+  }
+}*/
