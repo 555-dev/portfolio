@@ -18,7 +18,7 @@
     <nav class="vertical-menu">
         <div> <a href="index.html">Home</a> </div> 
         <div> <a href="contact.html">Contact</a> </div>
-        <div> <a href="eventposter.html">Event Poster</a></div>
+        <div> <a href="eventposters.html">Event Posters</a></div>
         <div> <a href="musicvisualiser.html">Music Visualiser</a> </div>
         <div> <a href="themodulation.html">The Modulation</a> </div>
         <div> <a href="visualidentity.html">Visual Identity</a> </div>
@@ -60,7 +60,6 @@
         document.querySelectorAll('img.image').forEach(image => {
             image.onclick = () => {
                 document.querySelectorAll('img.bigview').forEach(bv => bv.style.display = 'none');
-                // Find the specific class that isn't "image"
                 const targetClass = Array.from(image.classList).find(cls => cls !== 'image');
                 const newBigView = document.querySelector(`img.bigview.${targetClass}`);
                 if (newBigView) {
